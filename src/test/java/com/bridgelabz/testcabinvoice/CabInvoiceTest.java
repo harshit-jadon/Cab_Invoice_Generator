@@ -11,4 +11,10 @@ public class CabInvoiceTest {
         double totalFare = cabInvoice.totalFareOfJourney(7,15);
         Assert.assertEquals(85,totalFare, 0.0);
     }
+    @Test
+    public void givenDistanceAndTime_whenCostPerKilometrePerMin_shouldReturnMinimumFare() {
+        CabInvoice cabInvoice = new CabInvoice();
+        double totalFare = cabInvoice.totalFareOfJourney(0.1, 2);
+        Assert.assertEquals(5, totalFare, 0.0);
+    }
 }
