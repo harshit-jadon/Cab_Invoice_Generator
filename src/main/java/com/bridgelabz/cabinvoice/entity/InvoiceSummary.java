@@ -1,4 +1,4 @@
-package com.bridgelabz.cabinvoice;
+package com.bridgelabz.cabinvoice.entity;
 
 public class InvoiceSummary {
     public final int noOfRides;
